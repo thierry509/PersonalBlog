@@ -1,9 +1,5 @@
 <?php
 require '../vendor/autoload.php';
-define('HOST', 'localhost');
-define('database', 'blog');
-define('username', 'root');
-define('password', 'Haiti204');
 use Ht\Blog\Controllers\PostControllers\PostControllers;
 use Ht\Blog\Utils\Router;
 define('viewPAth', dirname(__DIR__) . "/src/view");
