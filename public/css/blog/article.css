@@ -1,0 +1,206 @@
+#main{
+    display: flex;
+    flex-direction: row;
+}
+/* styl of the article section */
+#article{
+    width: 75%;
+    padding: 1em;
+    text-align: justify;
+}
+#article .head-art{
+   margin: 1em 0;
+   border-bottom: dotted 3px;
+}
+.head-art .img{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-art .info{
+    display: flex;
+    justify-content: end;
+}
+.head-art .info div{
+    margin: .5em;
+}
+.head-art h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.head-art .foot{
+    padding: .7em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-art .foot .author{
+    font-size: .8em;
+    font-weight: 600;
+}
+.head-art .foot .author span{
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: .2em;
+    font-weight: 300;
+}
+.head-art .foot .share{
+    cursor: pointer;
+    border: solid;
+    border-radius: 10em;
+    padding: .2em .5em;
+}
+section.fragment{
+    margin: 2em 0;
+}
+section.fragment h2{
+    margin-bottom: .5em;
+    font-size: .98em;
+}
+section.fragment p{
+    font-size: .87em;
+}
+
+#comments{
+    margin: 1em 0;
+    border: dotted 2px;
+    padding: 1em 0;
+}
+#comments h2{
+    margin: 0 1.7em;
+    font-size: 1.5em;
+    position: relative;
+    width: max-content;
+    padding: .1em 0;
+}
+.comments-list .comment{
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+.comment-box{
+    background-color: aliceblue;
+    width: 90%;
+}
+.comment-box .head-comm{
+    display: flex;
+    justify-content: space-between;
+    padding: .2em .2em;
+    border-bottom: solid 1px;
+}
+.comment-box .head-comm .author{
+    font-weight: 600;
+    font-size: .9em;
+}
+.comment-box .body-comm{
+    font-size:  .8em;
+}
+.add-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-comment form{
+    width: 90%;
+}
+.add-comment .input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.add-comment .input-box label{
+    font-size: .9em;
+}
+.add-comment .input-box input,
+.add-comment .input-box textarea{
+    outline: unset;
+    border: unset;
+    border-radius: .3em;
+}
+.add-comment .input-box input{
+    height: 6vh;
+    padding: .5em;
+}
+.add-comment .input-box textarea{
+    /* height: 20vh; */
+    resize: vertical;
+}
+
+#rigth{
+    width: 25%;
+    margin: 0 1em;
+}
+.list-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rigth h2{
+    position: relative;
+    font-size: 1.4em;
+    width: max-content;
+    padding: .1em 0;
+}
+.list-post a{
+    margin: 1em 0;
+    width: 90%;
+}
+.post-box-r{
+    display: flex;
+    height: 17vh;
+    width: 100%;
+    background: #fff;
+}
+.post-box-r .img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: var(--color5);
+}
+.post-box-r .info-r{
+    width: 70%;
+    padding: .4em;
+}
+.post-box-r .info-r .title{
+    font-size: .8em;
+    font-weight: 600;
+}
+.post-box-r .info-r .created-at{
+    padding: .3em;
+    font-size: .6em;
+}
+
+
+/* designed title in commande and */ 
+#rigth h2::after, #comments h2::after{
+    content: ' ';
+    position: absolute;
+    background-color: var(--color3);
+    width: 60%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 1em;
+}   
+@media screen and (max-width:800px){
+    #main{
+        flex-direction: column;
+    }
+    #article{
+        width: 100%;
+    }
+    #rigth{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .head-art .img{
+        height: 150px;
+    }
+    
+}

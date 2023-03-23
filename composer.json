@@ -1,0 +1,21 @@
+{
+    "name": "ht/blog",
+    "description": "Blog for post and comment",
+    "license": "GNU",
+    "autoload": {
+        "psr-4": {
+            "Ht\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thierry509"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.5",
+        "altorouter/altorouter": "^2.0",
+        "symfony/var-dumper": "^5.4",
+        "intervention/image": "^2.7"
+    }
+}
