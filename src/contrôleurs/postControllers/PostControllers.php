@@ -23,12 +23,7 @@ class PostControllers extends Controllers{
         $this->render('blog/home.php');
     }
     public function comment(){
-        $comment[]['name'] = "Thierry509";
-        $comment[]['body'] = "Wi se sa";
-        $comment[]['name'] = "Thierry509";
-        $comment[]['body'] = "Wi se pa sa";
-        $comment[]['name'] = "Thierry509";
-        $comment[]['body'] = "Mwen dako avek ou"; 
-        $this->returnJson($comment);
+    
     }
+    
 }
